@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+    <head>
+        <title>Happy 18th Birthday, Lella</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 20px;
+                min-height: 100vh;
+                font-family: Arial, sans-serif;
+                color: white;
+                background: linear-gradient(135deg, #a8008c, #070006);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .stars {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                background-image:
+                    radial-gradient(white 1px, transparent 1px),
+                    radial-gradient(#cbbcff 1px, transparent 1px);
+                background-size: 80px 80px, 120px 120px;
+                background-position: 10px 20px, 50px 60px;
+                opacity: 0.35;
+            }
+
+            .card {
+                position: relative;
+                max-width: 650px;
+                width: 100%;
+                padding: 35px;
+                text-align: center;
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                border-radius: 20px;
+                box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+            }
+
+            .eyebrow {
+                color: #d6c8ff;
+                font-size: 13px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            } 
+
+            .circle-image {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            h1 {
+                font-size: 55px;
+                margin: 0;
+                line-height: 1.1;
+            }
+
+            h1 span {
+                display: block;
+                background: linear-gradient(90deg, #ffe4ff, #fcc0f4, #f752d3);
+                background-clip: text;
+                color: transparent;
+            }
+
+            .subtitle {
+                color: #d0cde0;
+                line-height: 1.7;
+                margin: 20px auto;
+            }
+
+            .age {
+                display: inline-block;
+                padding: 10px 18px;
+                margin: 10px 0 25px;
+                color: #e5dcff;
+                background: rgba(167, 139, 250, 0.15);
+                border: 1px solid rgba(196, 181, 253, 0.4);
+                border-radius: 25px;
+                font-weight: bold;
+            }
+
+            .message {
+                text-align: left;
+                line-height: 1.8;
+                padding: 20px;
+                border-radius: 15px;
+                background: rgba(0, 0, 0, 0.2);
+            }
+
+            .message p {
+                margin-bottom: 14px;
+            }
+
+            button {
+                margin-top: 25px;
+                padding: 13px 22px;
+                border: none;
+                border-radius: 25px;
+                background: linear-gradient(100deg, #ffacd0, #c4b5fd);
+                color: #21152f;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            button:hover {
+                opacity: 0.85;
+            }
+
+            .surprise {
+                display: none;
+                margin-top: 20px;
+                color: #ffe0ee;
+                line-height: 1.7;
+            }
+
+            .surprise.show {
+                display: block;
+            }
+
+            .signature {
+                margin-top: 20px;
+                color: #d8d0f5;
+                font-size: 14px;
+            }
+
+            .credit {
+                text-align: center;
+                font-size: 12px;
+                color: #aaa;
+            }
+
+            .credit span {
+                color: #ff46e6;
+                font-weight: bold;
+            }
+
+            .footer {
+                color: #aaa5c8;
+                font-size: 12px;
+                margin-top: 25px;
+            }
+
+            .floaty {
+                position: fixed;
+                bottom: -40px;
+                pointer-events: none;
+                animation: floatUp 7s linear forwards;
+            }
+
+            @keyframes floatUp {
+                from {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+                to {
+                    transform: translateY(-110vh);
+                    opacity: 0;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .card {
+                    padding: 22px;
+                }
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                .message {
+                    padding: 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="stars" aria-hidden="true"></div>
+        <main class="card">
+            <div class="eyebrow">October 30<sup>th</sup> · A special day</div>           
+            <div class="cake" aria-hidden="true">
+                <img src="fngkitten.png" class="circle-image" alt="Icon Description" width="100" height="100">
+            </div>
+            <h1>Happy Birthday,<span>Thenula</span></h1>
+            <p class="subtitle">Fang1284_ has officially reached Level 18. The next chapter starts now. ✨</p>
+            <div class="age">🎉 LEVEL 18 UNLOCKED 🎉</div>
+            <section class="message" aria-label="Birthday message">    
+                <p>Bro, happy 18th birthday! ❤️</p>
+                <p>It's honestly crazy to think we've been friends since Grade 6. We've grown up so much since then nehh. And I'm genuinely glad you've been part of my life through all these years.</p>
+                <p>Thank you so much for the memories, the laughs, and all the random moments that somehow became favourite memories I'll keep. No matter how much life changes, I hope we'll always be able to look back and laugh about the old days.</p>
+                <p>You're not just someone I've known for a long time. You're a real friend, and I appreciate that more than I probably say. I hope 18 brings you happiness, good health, success, new adventures, and plenty of reasons to smile.</p>
+                <p>Here's to more years of friendship, more unforgettable memories, and seeing you become the person you want to be. Have the best birthday, Thenula. You deserve it, bro. 🥳</p>
+            </section>
+            <button type="button" id="surpriseBtn" aria-expanded="false" aria-controls="surprise">Click for one last thing 💌</button>
+            <div class="surprise" id="surprise">
+                <strong>From 11 to 18 - still here.</strong><br><hr>
+                Thanks for being the best part of my whole story, bro. Let's make the next chapters even better. 🤝💖<br>
+                <hr>
+                <img src="fngfl2.png" alt="Icon Description"  width="557" height="360">
+            </div>
+            <div class="signature">
+                Made with love and friendship<br>  
+            </div>
+            <div class="credit">
+                <br>
+                From <span>Sanda_10</span><br> 
+                To <span>Fang1284_</span>
+            </div>
+            <div class="footer">Happy 18th, October 30 🎈</div>   
+        </main>
+        <script>
+            var button = document.getElementById("surpriseBtn");
+            var surprise = document.getElementById("surprise");
+            button.onclick = function() {
+                if (surprise.classList.contains("show")) {
+                    surprise.classList.remove("show");
+                    button.innerHTML = "Click for one last thing 💌";
+                    button.setAttribute("aria-expanded", "false");
+                } 
+                else {
+                    surprise.classList.add("show");
+                    button.innerHTML = "A little more friendship 💗";
+                    button.setAttribute("aria-expanded", "true");
+                    burst();
+                }
+            };
+            var symbols = ["💗", "✨", "🎉", "💖", "😎"]; 
+            function floaty() {
+                var item = document.createElement("span");
+                item.className = "floaty";
+                var randomNumber = Math.floor(Math.random() * symbols.length);
+                item.innerHTML = symbols[randomNumber];
+                item.style.left = Math.random() * 100 + "vw";
+                item.style.fontSize = (14 + Math.random() * 18) + "px";
+                item.style.animationDuration = (5 + Math.random() * 5) + "s";
+                document.body.appendChild(item);
+                item.addEventListener("animationend", function() {
+                    item.remove();
+                });
+            }
+            var floatTimer = setInterval(floaty, 900);
+            function burst() {
+                var i = 0;
+                while (i < 18) {
+                    setTimeout(floaty, i * 70);
+                    i++;
+                }
+            }
+        </script>
+    </body>
+</html>
